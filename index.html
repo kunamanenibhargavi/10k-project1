@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PUZZLE</title>
+  <style>
+    :root {
+      --primary-color: #1b9bff;
+      --secondary-color: darkgreen;
+      --tertiary-color: rgb(73, 235, 146);
+      --font-color: white;
+      --bg-color: white;
+      --text-size: 18px;
+    }
+
+    body {
+      background-image: url("./1.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar {
+      padding: 0 15px;
+      height: 60px;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .navdiv {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 35px;
+      font-weight: 600;
+      color: var(--font-color);
+      margin-left: 6%;
+    }
+
+    li {
+      display: inline-block;
+      list-style: none;
+    }
+
+    li a {
+      color: var(--font-color);
+      font-size: var(--text-size);
+      font-weight: bold;
+      margin-right: 25px;
+      text-decoration: none;
+      transition: background 0.5s;
+    }
+
+    li a:hover,
+    li a:active {
+      background: var(--primary-color);
+    }
+
+    .flex-box {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .box {
+      background-color: var(--bg-color);
+      padding: 40px;
+      text-align: center;
+      flex: 1 1 300px;
+      max-width: 550px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+      border: none;
+      padding: 12px 25px;
+      font-size: 16px;
+      margin: 5px;
+      cursor: pointer;
+    }
+
+    .button-primary {
+      background-color: var(--primary-color);
+    }
+
+    .button-secondary {
+      background-color: var(--secondary-color);
+    }
+
+    .button-tertiary {
+      background-color: var(--tertiary-color);
+    }
+
+    .footer {
+      text-align: center;
+      padding: 50px;
+      font-size: 20px;
+      background-color: rgba(12, 12, 12, 0.7);
+      color: var(--font-color);
+    }
+    @media screen and (min-width: 601px){
+        .box {
+      background-color: var(--bg-color);
+      padding: 40px;
+      text-align: center;
+      flex: 1 1 300px;
+      min-width: 400px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    }
+    @media screen and (max-width: 600px) {
+      .navbar {
+        height: 70px;
+        padding: 0 10px;
+      }
+      .logo {
+        font-size: 25px;
+      }
+
+      li a {
+        font-size: 16px;
+      }
+
+      .box {
+        padding: 20px;
+        font-size: 14px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo">PUZZLE</div>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#clients">Clients</a></li>
+          <li><a href="#externals">Externals</a></li>
+          <li><a href="#contacts">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="flex-box">
+      <div class="box">
+        <img src="./2.jpg" alt="Image 2" style="width: 100%; height: auto;">
+        
+      </div>
+      <div class="box">
+        <h3>PUZZLE BOOTSTRAP TEMPLATE</h3>
+        <p>Puzzle is a Bootstrap(v3.3.6) responsive template provided by templatemo. You can download, edit, and use this layout for free. No backlink is required. Credit goes to Unsplash for images used in this layout.</p>
+        <button type="button" class="button button-primary">Big Button</button>
+        <button type="button" class="button button-secondary">Download</button>
+      </div>
+
+      <section id="services" class="box">
+        <h3>Quality Services</h3>
+        <p>Service quality refers to the degree to which a service meets or exceeds customer expectations. It is a measure of how well a service is delivered and how it satisfies customers' needs and desires. Service quality is often assessed based on several dimensions, including reliability, responsiveness, assurance, empathy, and tangibles.</p>
+        <ul>
+          <li>Tangibles: appearance of physical facilities, equipment, personnel, and communication materials.</li>
+          <li>Reliability: ability to perform the promised service dependably and accurately.</li>
+          <li>Responsiveness: willingness to help customers and provide prompt service.</li>
+          <li>Assurance: knowledge and courtesy of employees and their ability to convey trust and confidence.</li>
+          <li>Empathy: the caring, individualized attention the firm provides its customers.</li>
+        </ul>
+      </section>
+      <div class="box">
+        <img src="./3.jpg" alt="Image 2" style="width: 100%; height: auto;">
+        
+      </div>
+      <div class="box">
+        <img src="./4.jpg" alt="Image 2" style="width: 100%; height: auto;">
+        
+      </div>
+      <section id="clients" class="box">
+        <h3>Our Clients</h3>
+        <p>Our clients face increasingly complex and interwoven business problems. Our multidisciplinary model gives them access to a broad range of services, expertise, and ideas when they need them most as part of a fully integrated solution. The approach we take is core to our purpose to inspire confidence and empower change and to build public trust.</p>
+        <button type="button" class="button button-primary">Small Button</button>
+        <button type="button" class="button button-secondary">Download</button>
+        <button type="button" class="button button-tertiary">Demo</button>
+      </section>
+
+      <section id="contacts" class="box">
+        <h3>Contact Us</h3>
+        <p>An effective Contact Us page typically starts with a catchy header. This draws the visitor in and encourages them to utilize your support offers.</p>
+        <input type="text" placeholder="Your Name..." style="width: 100%; padding: 10px; margin: 10px 0;">
+        <input type="text" placeholder="Your Email..." style="width: 100%; padding: 10px; margin: 10px 0;">
+        <textarea name="subject" rows="2" style="width: 100%; padding: 10px; margin: 10px 0;" placeholder="Your Subject..."></textarea>
+        <textarea name="message" rows="4" style="width: 100%; padding: 10px; margin: 10px 0;" placeholder="Write Your Message..."></textarea>
+        <button type="button" class="button button-primary">Submit</button>
+      </section>
+
+      <section id="externals" class="box">
+        <img src="./5.png" alt="Image 6" style="width: 100%; height: auto;">
+        <h3>About this website</h3>
+        <p>Consider what step you'd like readers to take next. Use additional content and calls to action to move them forward towards that goal. This could include buttons, testimonials, an explainer video, data visualizations, links to blog posts, products, your social media accounts, or newsletter.</p>
+      </section>
+      <div class="box">
+        <h3>About this website</h3>
+        <p>Consider what step you'd like readers to take next. Use additional content and calls to action to move them forward towards that goal. This could include buttons, testimonials, an explainer video, data visualizations, links to blog posts, products, your social media accounts, or newsletter.</p>
+      
+      </div>
+    </div>
+
+    <div class="footer">
+      <h3>Copyright @ 2084 Company Name | Design Puzzle</h3>
+    </div>
+  </div>
+</body>
+</html>
